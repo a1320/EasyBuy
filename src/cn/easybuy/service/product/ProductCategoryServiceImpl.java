@@ -25,12 +25,10 @@ import org.apache.log4j.Logger;
 public class ProductCategoryServiceImpl implements ProductCategoryService {
 	
 	private Logger logger = Logger.getLogger(ProductCategoryServiceImpl.class);
-    /**
-     *
-     * @param id
-     * @return
-     */
-    @Override
+	 @Override
+	 /**
+     * 根据id查询商品分类
+     */ 
     public ProductCategory getById(Integer id) {
         SqlSession sqlSession = null;
         ProductCategory productCategory = new ProductCategory();
@@ -48,6 +46,9 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     }
 
     @Override
+    /**
+     * 查询商品分类列表
+     */
     public List<ProductCategory> queryProductCategoryList(ProductCategoryParam params) {
         SqlSession sqlSession = null;
 		List<ProductCategory> productCategoryList = new ArrayList<ProductCategory>();
@@ -66,6 +67,9 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     }
 
     @Override
+    /**
+     * 查询数目 
+     */
     public int queryProductCategoryCount(ProductCategoryParam params) {
         SqlSession sqlSession = null;
 		int count = 0;

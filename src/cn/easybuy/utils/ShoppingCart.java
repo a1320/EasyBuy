@@ -1,6 +1,5 @@
 package cn.easybuy.utils;
 
-import cn.easybuy.entity.Order;
 import cn.easybuy.entity.Product;
 
 import java.io.Serializable;

@@ -9,5 +9,8 @@ public interface CartService {
 
     public ShoppingCart modifyShoppingCart(String productId,String quantityStr,ShoppingCart cart) throws Exception;
 
+    /**
+     * 核算购物车的金额
+     */
     public ShoppingCart calculate(ShoppingCart cart)throws Exception;
 }

@@ -57,6 +57,7 @@ public class AdminNewsServlet extends AbstractServlet {
 		request.setAttribute("menu", 7);
 		return "/backend/news/newsList";
 	}
+	
 	/**
 	 * 查询新闻详情
 	 * @param request

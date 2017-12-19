@@ -2,3 +2,7 @@
 这是Accp8.0易买网MySql  MyBatis版。纯净版。
 
 农立祥 2017-12-08
+
+(database.properties)
+
+(MyBatisUtil)
